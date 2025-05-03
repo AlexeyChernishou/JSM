@@ -4,9 +4,9 @@
   "description": "Just some mod...",
   "version": "0.1.0-beta.1",
   "mcversion": "1.12.2",
-  "url": "",
-  "updateUrl": "",
+  "url": "https://modrinth.com/project/just-some-mod",
+  "updateUrl": "https://raw.githubusercontent.com/AlexeyChernishou/JSM/refs/heads/main/updates.json",
   "authorList": ["AlexeyChernishou"],
-  "credits": "",
-  "logoFile": ""
+  "credits": "Forge team",
+  "logoFile": "assets/jsm/textures/logo.png"
 }]
