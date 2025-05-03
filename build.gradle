@@ -1,0 +1,80 @@
+plugins {
+
+    id 'eclipse'
+    id 'net.minecraftforge.gradle' version "${forge_gradle_version}"
+	
+}
+
+version = "${mod_version}"
+group = "com.${mod_id}"
+archivesBaseName = "${mod_id}"
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(8)
+
+configurations {
+
+    atDependencies
+    implementation.extendsFrom(atDependencies)
+    includedDependencies
+    implementation.extendsFrom(includedDependencies)
+    buildDependencies
+	
+}
+
+dependencies {
+
+    minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
+
+}
+
+minecraft {
+
+    mappings channel: "${mappings_channel}", version: "${mappings_version}"
+	
+    runs {
+	
+        client {
+		
+            environment 'MC_VERSION', "${mc_version}"
+			workingDirectory project.file('run')
+			
+        }
+
+        server {
+		
+            environment 'MC_VERSION', "${mc_version}"
+			workingDirectory project.file('run')
+			
+        }
+		
+    }
+	
+}
+
+jar {
+
+    manifest {
+	
+        attributes([
+		
+            "Specification-Title": "JSM",
+            "Specification-Vendor": "AlexeyChernishou",
+            "Specification-Version": "1",
+            "Implementation-Title": project.name,
+            "Implementation-Version": "${mod_version}",
+            "Implementation-Vendor" :"AlexeyChernishou",
+            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+			
+        ])
+		
+    }
+	
+}
+
+jar.finalizedBy('reobfJar') 
+
+compileJava {
+
+    classpath = sourceSets.main.compileClasspath + configurations.buildDependencies
+	
+}
