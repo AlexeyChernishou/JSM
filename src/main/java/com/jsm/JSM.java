@@ -2,6 +2,7 @@ package com.jsm;
 
 import com.jsm.init.JSMBlocks;
 import com.jsm.init.JSMCreativeTabs;
+import com.jsm.init.JSMItems;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -24,6 +25,7 @@ public class JSM {
 	public static void preInit(FMLPreInitializationEvent event) {
 		
 		JSMBlocks.init();
+		JSMItems.init();
 		
 	}
 	
@@ -31,6 +33,7 @@ public class JSM {
 	public static void init(FMLInitializationEvent event) {
 		
 		JSMBlocks.initModels();
+		JSMItems.initModels();
 		
 	}
 	
