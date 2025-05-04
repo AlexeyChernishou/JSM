@@ -25,6 +25,7 @@ public class JSMCreativeTabs {
 		
 		JSMItems.COPPER_NUGGET.setCreativeTab(JSM_MAIN);
 		JSMItems.COPPER_INGOT.setCreativeTab(JSM_MAIN);
+		JSMBlocks.COPPER_BLOCK.setCreativeTab(JSM_MAIN);
 		JSMBlocks.COPPER_ORE.setCreativeTab(JSM_MAIN);
 		
 	}
