@@ -12,16 +12,19 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class JSMItems {
 	
 	public static final Item COPPER_INGOT = new ItemBase("copper_ingot");
+	public static final Item COPPER_NUGGET = new ItemBase("copper_nugget");
 	
 	public static void init() {
 		
 		registerItem(COPPER_INGOT);
+		registerItem(COPPER_NUGGET);
 		
 	}
 	
 	public static void initModels() {
 		
 		registerModel(COPPER_INGOT);
+		registerModel(COPPER_NUGGET);
 		
 	}
 	

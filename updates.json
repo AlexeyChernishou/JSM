@@ -1,7 +1,7 @@
 {
   "homepage": "https://modrinth.com/project/just-some-mod",
   "1.12.2": {
-    "0.1.0-beta.1": "Added copper ore, ingot"
+    "0.1.0-beta.1": "Added copper ore, ingot, nugget"
   },
   "promos": {
     "1.12.2-latest": "0.1.0-beta.1",
