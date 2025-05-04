@@ -3,6 +3,7 @@ package com.jsm;
 import com.jsm.init.JSMBlocks;
 import com.jsm.init.JSMCreativeTabs;
 import com.jsm.init.JSMItems;
+import com.jsm.init.JSMRecipes;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -40,6 +41,7 @@ public class JSM {
 	@EventHandler
 	public static void postInit(FMLPostInitializationEvent event) {
 		
+		JSMRecipes.init();
 		JSMCreativeTabs.init();
 		
 	}
