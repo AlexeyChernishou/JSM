@@ -1,2 +1,3 @@
 itemGroup.jsm.main=JSM
 tile.jsm.copper_ore.name=Copper ore
+item.jsm.copper_ingot.name=Copper ingot

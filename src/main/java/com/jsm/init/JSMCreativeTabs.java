@@ -23,6 +23,7 @@ public class JSMCreativeTabs {
 	
 	public static void init() {
 		
+		JSMItems.COPPER_INGOT.setCreativeTab(JSM_MAIN);
 		JSMBlocks.COPPER_ORE.setCreativeTab(JSM_MAIN);
 		
 	}
