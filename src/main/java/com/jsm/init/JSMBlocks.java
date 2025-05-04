@@ -1,5 +1,7 @@
 package com.jsm.init;
 
+import com.jsm.block.BlockBaseOre;
+
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -11,11 +13,17 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class JSMBlocks {
 	
+	public static final Block COPPER_ORE = new BlockBaseOre("copper_ore", 3.0F, 5.0F, 1);
+	
 	public static void init() {
+		
+		registerBlock(COPPER_ORE);
 		
 	}
 	
 	public static void initModels() {
+		
+		registerModel(COPPER_ORE);
 		
 	}
 	
